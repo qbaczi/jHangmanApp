@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="224b8f1d-45cb-4ece-a6b9-4425a7864e1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryForbiddenWordsRepository.java" afterDir="false" />
+    <list default="true" id="224b8f1d-45cb-4ece-a6b9-4425a7864e1e" name="Default Changelist" comment="add phrase functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hangman/FileApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hangman/infrastructure/file/FileBaseForbiddenWordsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hangman/forbiddenWords.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleViews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleViews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryPhraseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryPhraseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hangman/application/ConsoleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hangman/application/ConsoleApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hangman/application/ConsoleViews.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hangman/application/ConsoleViews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hangman/infrastructure/memory/InMemoryPhraseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hangman/infrastructure/memory/InMemoryPhraseRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,28 +34,34 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="24" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="31" />
+          <entry key="json" value="1" />
+          <entry key="test" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="JAVA" value="24" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="31" />
+          <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3832" />
-          <entry key="txt" value="23" />
+          <entry key="java" value="4068" />
+          <entry key="test" value="21" />
+          <entry key="txt" value="71" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3832" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="JAVA" value="4068" />
+          <entry key="PLAIN_TEXT" value="92" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -63,96 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleViews.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryPhraseRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryForbiddenWordsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hangman/domain/PhraseServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/ForbiddenWordsValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hangman/domain/ForboddenWordsValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,10 +79,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/port/PhraseRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/io/FileInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure/file/FileBaseForbiddenWordsRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,13 +140,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/hangman/domain/GameFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/model/GameStatus.java" />
         <option value="$PROJECT_DIR$/src/test/java/hangman/domain/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/model/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/GameFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/exceptions/GameException.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/exceptions/PhraseAlreadyExisteException.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/exceptions/ForbiddenWordsInPhrasException.java" />
@@ -205,9 +155,17 @@
         <option value="$PROJECT_DIR$/src/test/java/hangman/domain/ForboddenWordsValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryForbiddenWordsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryPhraseRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleViews.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/FileApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/infrastructure/file/FileBaseForbiddenWords.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/infrastructure/file/FileBaseForbiddenWordsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hangman/forbiddenWords.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/application/File.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java" />
       </list>
     </option>
   </component>
@@ -223,7 +181,9 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -254,83 +214,21 @@
               <item name="hangman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hangman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="hangman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="port" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="memory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hangman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hangman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hangman" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,7 +238,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538588516112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538592867015" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyProjects" />
     <property name="project.structure.last.edited" value="Project" />
@@ -353,6 +251,7 @@
       <recent name="hangman.domain" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="hangman.application" />
       <recent name="hangman.domain.model" />
     </key>
   </component>
@@ -369,6 +268,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.HangmanApplication">
+    <configuration name="FileApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hangman.FileApp" />
+      <module name="hangman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hangman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HangmanApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hangman.HangmanApplication" />
       <module name="hangman" />
@@ -392,20 +304,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="hangman.domain" />
       <option name="MAIN_CLASS_NAME" value="hangman.domain.ForboddenWordsValidatorTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hangman" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hangman.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hangman.domain" />
-      <option name="MAIN_CLASS_NAME" value="hangman.domain.GameTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -441,19 +339,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest" />
       <item itemvalue="Application.HangmanApplication" />
       <item itemvalue="JUnit.PhraseServiceTest.addPhraseShouldAddNewPhrase" />
       <item itemvalue="JUnit.PhraseServiceTest" />
       <item itemvalue="JUnit.ForboddenWordsValidatorTest" />
+      <item itemvalue="Application.FileApp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HangmanApplication" />
+        <item itemvalue="Application.FileApp" />
         <item itemvalue="JUnit.ForboddenWordsValidatorTest" />
         <item itemvalue="JUnit.PhraseServiceTest" />
         <item itemvalue="JUnit.PhraseServiceTest.addPhraseShouldAddNewPhrase" />
-        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538586336139</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add phrase functionality">
+      <created>1538588689425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538588689425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -512,8 +417,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -522,7 +428,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32944915" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32944915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,16 +453,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="junit and mockito tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="junit and mockito tests" />
+    <MESSAGE value="add phrase functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add phrase functionality" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="18" selection-start-line="27" selection-start-column="3" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hangman/domain/GameFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -648,7 +548,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/hangman/domain/PhraseServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
-          <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -658,7 +558,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/ForbiddenWordsValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -682,33 +582,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="38">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/File.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hangman/forbiddenWords.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="722">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleViews.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
+        <state relative-caret-position="706">
           <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -719,7 +622,61 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure/memory/InMemoryPhraseRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/FileApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/domain/port/ForbiddenWordsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/HangmanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/infrastructure/file/FileBaseForbiddenWordsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hangman/application/ConsoleApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
