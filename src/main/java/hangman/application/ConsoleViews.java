@@ -44,7 +44,7 @@ public class ConsoleViews {
     }
 
     private void waitForAction() {
-        System.out.println("Wciśnij Enter by zagrać poownie");
+        System.out.println("Wciśnij Enter by zagrać ponwnie");
         scanner.nextLine();
     }
 

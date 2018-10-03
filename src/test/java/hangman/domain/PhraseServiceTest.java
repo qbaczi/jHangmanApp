@@ -11,11 +11,16 @@ public class PhraseServiceTest {
 
     @Test
     public void addPhraseShouldAddNewPhrase() throws Exception{
+
         ForbiddenWordsValidator forbiddenWordsValidator = Mockito.mock(ForbiddenWordsValidator.class);
         PhraseRepository phraseRepository = Mockito.mock(PhraseRepository.class);
+        Mockito.when(phraseRepository.contains(Mockito.anyString())).thenReturn(false);
+        Mockito.when(forbiddenWordsValidator.validate(Mockito.anyString())).thenReturn(true);
         PhraseService phraseService = new PhraseService(phraseRepository, forbiddenWordsValidator);
 
-        phraseService.addPhrase("phrae with forbidden word");
+        phraseService.addPhrase("phrase with forbidden word");
+
+        Mockito.verify(phraseRepository, Mockito.times(1)).save("phrase with forbidden word");
     }
 
 
@@ -25,9 +30,11 @@ public class PhraseServiceTest {
 
         ForbiddenWordsValidator forbiddenWordsValidator = Mockito.mock(ForbiddenWordsValidator.class);
         PhraseRepository phraseRepository = Mockito.mock(PhraseRepository.class);
+        Mockito.when(phraseRepository.contains(Mockito.anyString())).thenReturn(true);
+        Mockito.when(forbiddenWordsValidator.validate(Mockito.anyString())).thenReturn(true);
         PhraseService phraseService = new PhraseService(phraseRepository, forbiddenWordsValidator);
 
-        phraseService.addPhrase("phrae with forbidden word");
+        phraseService.addPhrase("phrase with forbidden word");
     }
 
 
@@ -37,10 +44,11 @@ public class PhraseServiceTest {
 
         ForbiddenWordsValidator forbiddenWordsValidator = Mockito.mock(ForbiddenWordsValidator.class);
         PhraseRepository phraseRepository = Mockito.mock(PhraseRepository.class);
-        Mockito.when(forbiddenWordsValidator.validate(Mockito.anyString()));
+        Mockito.when(phraseRepository.contains(Mockito.anyString())).thenReturn(false);
+        Mockito.when(forbiddenWordsValidator.validate(Mockito.anyString())).thenReturn(false);
         PhraseService phraseService = new PhraseService(phraseRepository, forbiddenWordsValidator);
 
-        phraseService.addPhrase("phrae with forbidden word");
+        phraseService.addPhrase("phrase with forbidden word");
 
     }
 }
