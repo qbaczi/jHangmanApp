@@ -1,8 +1,13 @@
 package hangman.application;
 
+import hangman.domain.ForbiddenWordsValidator;
 import hangman.domain.GameFactory;
+import hangman.domain.PhraseService;
+import hangman.domain.exceptions.ForbiddenWordsInPhrasException;
+import hangman.domain.exceptions.PhraseAlreadyExisteException;
 import hangman.domain.model.Game;
 import hangman.domain.model.GameStatus;
+import hangman.infrastructure.memory.InMemoryForbiddenWordsRepository;
 import hangman.infrastructure.memory.InMemoryPhraseRepository;
 
 import java.util.Arrays;
@@ -12,10 +17,14 @@ public class ConsoleApplication {
 
     private ConsoleViews consoleViews;
     private GameFactory gameFactory;
+    private PhraseService phraseService;
 
     public ConsoleApplication() {
-        this.gameFactory = new GameFactory(new InMemoryPhraseRepository(Arrays.asList("Ala ma kota", "Wielkopolska")));
+        InMemoryPhraseRepository phraseRepository = new InMemoryPhraseRepository(Arrays.asList("Ala ma kota", "Wielkopolska"));
+        ForbiddenWordsValidator forbiddenWordsValidator = new ForbiddenWordsValidator(new InMemoryForbiddenWordsRepository(Arrays.asList("zlodziej", "oszust")));
+        this.gameFactory = new GameFactory(phraseRepository);
         this.consoleViews = new ConsoleViews(new Scanner(System.in));
+        this.phraseService = new PhraseService(phraseRepository, forbiddenWordsValidator);
     }
 
     public void start() {
@@ -40,7 +49,15 @@ public class ConsoleApplication {
     }
 
     private void addPhrase() {
-//        String phrase = consoleViews.addPhraseMessage();
+        String phrase = consoleViews.addPhraseMessage();
+        try {
+            phraseService.addPhrase(phrase);
+            consoleViews.displayAddedSuccesfully(phrase);
+        } catch (ForbiddenWordsInPhrasException e) {
+            consoleViews.displayPhraseContainsForbiddenWords();
+        } catch (PhraseAlreadyExisteException e) {
+            consoleViews.displayPhraseAlreadyExists();
+        }
     }
 
     private void startGame() {
@@ -57,7 +74,6 @@ public class ConsoleApplication {
 
         if (game.getStatus() == GameStatus.WON) {
             consoleViews.displayGameWon();
-
         } else {
             consoleViews.displayGameLose();
         }

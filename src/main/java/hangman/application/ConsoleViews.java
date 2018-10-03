@@ -52,4 +52,24 @@ public class ConsoleViews {
         System.out.println("Przegrałeś/Przegrałaś");
         waitForAction();
     }
+
+    public String addPhraseMessage() {
+        System.out.println("Podaj fraze");
+        return scanner.nextLine();
+    }
+
+    public void displayPhraseContainsForbiddenWords() {
+        System.out.println("Podana fraza zawiara zabronione słowa");
+        waitForAction();
+    }
+
+    public void displayPhraseAlreadyExists() {
+        System.out.println("Podana fraza już istnieje");
+        waitForAction();
+    }
+
+    public void displayAddedSuccesfully(String phrase) {
+        System.out.println("Pomyślnie dodano fraze " + phrase);
+        waitForAction();
+    }
 }

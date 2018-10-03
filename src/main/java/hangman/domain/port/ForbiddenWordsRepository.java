@@ -6,6 +6,5 @@ public interface ForbiddenWordsRepository {
 
     List<String> findAll();
 
-    String containsForbiddenWordsWhitWhitespaces();
 
 }
